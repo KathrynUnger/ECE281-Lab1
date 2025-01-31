@@ -27,7 +27,7 @@
 ### Boolean Equation
 
 $$
-Y = AC'D'+AB'D'+A'D
+Y = A'D+AD'
 $$
 
 ### Digital Simulations
