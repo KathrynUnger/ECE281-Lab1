@@ -56,7 +56,7 @@ end thirtyOneDayMonth_tb;
 architecture test_bench of thirtyOneDayMonth_tb is 
 	
   -- declare the component of your top-level design unit under test (UUT) (looks very similar to entity declaration)
-  component thirtyoneDayMonth_sm is
+  component thirtyoneDayMonth is
     port(
 	i_A : in std_logic;
 	i_B : in std_logic;
@@ -75,7 +75,7 @@ architecture test_bench of thirtyOneDayMonth_tb is
 begin
 	-- PORT MAPS ----------------------------------------
 	-- map ports for any component instances (port mapping is like wiring hardware)
-    thirtyOneDayMonthMux_inst : thirtyOneDayMonth_sm port map (
+    thirtyOneDayMonthMux_inst : thirtyOneDayMonth port map (
 			i_D => w_sw(3),
 			i_C => w_sw(2),
 			i_B => w_sw(1),
